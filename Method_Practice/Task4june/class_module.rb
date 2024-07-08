@@ -1,3 +1,4 @@
+
 module A
 
     def sum 
@@ -16,11 +17,13 @@ module X
     end
 end
 
-    class B
-     include A
-     include X
 
-        def  oop 
+   class B
+     
+     extend X
+     extend A
+
+        def oop
            
             puts "CLASS B method"
         
@@ -44,18 +47,19 @@ end
         end
     end
 
+   
     p B.ancestors
 
     b=B.new
     
-    b.sum   
+    B.sum   
 
 # puts
 #     c=C.new
 #     p C.ancestors
 #     c.sum
 #     C.sum
-#     C.uni
+    
 
 #   puts
   
@@ -63,3 +67,4 @@ end
 
 #   d=D.new
 #   d.sum
+ 

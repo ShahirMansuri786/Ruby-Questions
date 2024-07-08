@@ -18,9 +18,11 @@ class Reverse_string
        length-=1
     end
 
-    puts @@arr.join("")
+    s=@@arr.join("")
 
-    if str == @arr
+    puts s
+
+    if str == s
       puts "string is palindrome"
     end
 
@@ -28,4 +30,4 @@ class Reverse_string
 
 end
  
-obj=Reverse_string.new("nayan")
+obj=Reverse_string.new("Shahir")
